@@ -1,0 +1,33 @@
+# Feature request — GitHub Issue Form. Problem-first so requests capture the
+# workflow behind the ask, not just a solution. Source in the monorepo
+# (workers/github-landing), pushed to the vortilis/vorpilot repo.
+name: Feature request
+description: Suggest an idea or improvement
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us the problem first — the workflow or pain point matters more than a specific solution.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: The workflow or pain point behind the request. When do you hit it?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would you like VorPilot to do?
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives & workarounds
+      description: How do you handle this today (kubectl, another tool, a script)?
+    validations:
+      required: false

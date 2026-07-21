@@ -1,0 +1,10 @@
+# Issue chooser config. Blank issues are disabled so every report lands in a
+# structured form; questions are routed to Discussions instead of the tracker.
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & discussion
+    url: https://github.com/vortilis/vorpilot/discussions
+    about: Ask a question, share your setup, or discuss ideas — not everything needs to be a bug.
+  - name: VorPilot website
+    url: https://vortilis.com
+    about: Features, editions, comparison, and downloads.

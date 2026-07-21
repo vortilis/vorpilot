@@ -1,0 +1,68 @@
+# Bug report — GitHub Issue Form. Structured fields (OS / version / k8s) make
+# beta bugs fast to triage and reproduce; the source lives in the monorepo
+# (workers/github-landing) and is pushed to the vortilis/vorpilot repo.
+name: Bug report
+description: Something in VorPilot isn't working right
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve VorPilot. The details below make a bug far faster to reproduce and fix.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what actually happened?
+      placeholder: |
+        1. Steps to reproduce…
+        2. …
+        Expected: …
+        Actual: …
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: VorPilot version
+      description: Shown at the bottom-left of the app.
+      placeholder: v0.3.9
+    validations:
+      required: true
+  - type: input
+    id: kubernetes
+    attributes:
+      label: Kubernetes distribution & version
+      description: e.g. EKS 1.32, GKE 1.31, k3s v1.35, kind, OpenShift…
+      placeholder: EKS 1.32
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs & screenshots
+      description: Relevant log output or screenshots, if any. Drag images directly into this field.
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
+        - label: I'm on the latest beta build.
+          required: false
