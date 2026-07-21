@@ -1,0 +1,45 @@
+# Q&A discussion form. Filename MUST match the category slug (q-a) and only
+# applies on the default branch. Question is required; OS/version stay optional
+# so general "does VorPilot support X?" questions aren't blocked. Source lives in
+# the monorepo (workers/github-landing) and is pushed to vortilis/vorpilot.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before posting, please skim existing discussions — your question may already be answered.
+        Found a confirmed bug or have a concrete feature request? Open an [Issue](https://github.com/vortilis/vorpilot/issues/new/choose) instead.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do, and what's blocking you?
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      description: Only if your question is platform-specific.
+      options:
+        - Not sure / not relevant
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows
+        - Linux
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: VorPilot version
+      description: Shown at the bottom-left of the app, if relevant.
+      placeholder: v0.3.9
+    validations:
+      required: false
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Docs you read, kubectl equivalents, other tools, or workarounds.
+    validations:
+      required: false
