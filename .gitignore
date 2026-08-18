@@ -1,0 +1,10 @@
+# OS metadata. This repo holds only prose, images and issue templates — there is no
+# build output to ignore, so junk the filesystem creates on its own is the whole list.
+# It matters more here than in a private repo: this one goes public at launch, and a
+# stray `git add -A` on a machine that browsed assets/ in Finder would publish it.
+.DS_Store
+._*
+
+# Windows equivalents, for whoever edits this from there.
+Thumbs.db
+desktop.ini
