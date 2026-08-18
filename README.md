@@ -9,11 +9,11 @@
 A native **Kubernetes desktop client** — keyboard-driven, streaming-first, multi-cluster.
 Lives between `k9s` and Lens, doing the ops both punt to a shell alias.
 
-![status](https://img.shields.io/badge/status-public%20beta-a855f7)
+![status](https://img.shields.io/badge/status-beta-a855f7)
 &nbsp;![platform](https://img.shields.io/badge/macOS%20·%20Windows%20·%20Linux-native-22d3ee)
 &nbsp;![kubernetes](https://img.shields.io/badge/Kubernetes-1.32%2B-326ce5?logo=kubernetes&logoColor=white)
 &nbsp;![license](https://img.shields.io/badge/license-proprietary%20(EULA)-6e6b85)
-&nbsp;![price](https://img.shields.io/badge/beta-free%2C%20every%20feature-4ade80)
+&nbsp;![beta](https://img.shields.io/badge/beta-every%20feature%20unlocked-4ade80)
 
 **[Download](#download)** · **[Features](#features)** · **[Compare](#vorpilot-vs-the-shelf)** · **[Editions](#editions)** · **[FAQ](#faq)** · **[vortilis.com](https://vortilis.com)**
 
@@ -29,7 +29,7 @@ Lives between `k9s` and Lens, doing the ops both punt to a shell alias.
 
 `k9s` gave us keyboard muscle memory. Lens gave us scope — multi-cluster, CRDs, the whole API. VorPilot keeps both and adds the operations they punt to a shell: pause a whole namespace, X-ray a workload's real dependency graph, deploy from a manifest catalog in one keystroke, browse a container's filesystem, drop a privileged debug pod onto a node.
 
-Native desktop — **no Electron, no browser tab**. macOS, Windows, and Linux. Free during the public beta, every feature unlocked, no account or license key.
+Native desktop — **no Electron, no browser tab**. macOS, Windows, and Linux. Every feature unlocked — no account, no license key.
 
 ## Highlights
 
@@ -101,7 +101,7 @@ An honest, feature-by-feature look at the tools we ourselves use. Full table on 
 
 ## Editions
 
-Same app, two delivery models — **both free during the public beta**.
+Same app, two delivery models — **both open during the beta**.
 
 | | **Desktop** | **Server** |
 |---|---|---|
@@ -109,7 +109,7 @@ Same app, two delivery models — **both free during the public beta**.
 | Runs against | your local `kubeconfig` | *every* cluster your team operates, centrally configured |
 | Auth | — | your OIDC SSO (Dex, Keycloak, Okta, Google…) → cluster RBAC |
 | Delivery | macOS · Windows · Linux | Helm chart — you run it, you own it |
-| Status | **Public beta — available now** | **Coming soon · Q4 2026** |
+| Status | **Beta — available now** | **Coming soon · Q4 2026** |
 
 Server deploys once into a single infrastructure cluster and talks to all the rest; each engineer signs in through your identity provider and their token is forwarded to every cluster API, so **existing Kubernetes RBAC — not VorPilot — decides who can do what**. Nothing phones home; it runs entirely on your infrastructure.
 
@@ -117,14 +117,14 @@ Server deploys once into a single infrastructure cluster and talks to all the re
 
 **→ [vortilis.com/download](https://vortilis.com/download)** — macOS (Apple Silicon & Intel), Windows x64, Linux (x86_64 & ARM64).
 
-Free during the public beta — every feature unlocked, no account or license key. `brew` and `winget` at public launch.
+Every feature unlocked — no account, no license key. `brew` and `winget` at public launch.
 
 ## FAQ
 
 <details>
 <summary><b>Is it really free?</b></summary>
 
-Yes. VorPilot is in public beta — Desktop and Server alike are free, with every feature unlocked. No accounts, no license keys, no payment of any kind. We'll talk about how the project sustains itself closer to 1.0; for now, just use it.
+Yes. Desktop and Server alike are free during the beta, with every feature unlocked — no accounts, no license keys, no payment of any kind.
 </details>
 
 <details>
@@ -148,7 +148,7 @@ Desktop is local — your kubeconfig and manifests never leave your machine. Ser
 <details>
 <summary><b>Is VorPilot open source?</b></summary>
 
-No. VorPilot is proprietary software, distributed under our [EULA](https://vortilis.com/eula) — the Desktop app and Server ship as ready-to-run binaries (and a Helm chart for Server); the source isn't published. It's free to use during the public beta, with every feature unlocked. Third-party components and their licenses are listed at [vortilis.com/licenses](https://vortilis.com/licenses).
+No. VorPilot is proprietary software, distributed under our [EULA](https://vortilis.com/eula) — the Desktop app and Server ship as ready-to-run binaries (and a Helm chart for Server); the source isn't published. It's free to use during the beta, with every feature unlocked. Third-party components and their licenses are listed at [vortilis.com/licenses](https://vortilis.com/licenses).
 </details>
 
 ## Issues & feedback
