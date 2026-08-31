@@ -87,17 +87,18 @@ An honest, feature-by-feature look at the tools we ourselves use. Full table on 
 | Suspend / resume namespace | ✅ | – | – | – |
 | Container file browser | ✅ | – | – | – |
 | Trigger Job from a Job | ✅ | – | – | – |
-| Manifest catalog + 1-stroke deploy | ✅ | – | – | – |
-| Resource topology graph | ✅ | partial | XRay | partial |
+| Resource topology graph | ✅ | via extension | XRay | ✅ Map view |
 | Whole-namespace list (one pane) | ✅ | – | – | – |
-| Labels → sortable table columns | ✅ | – | via view | – |
+| Labels → sortable table columns | ✅ | – | via view | labels column |
 | Vim-style keyboard navigation | ✅ | – | ✅ | – |
-| Command palette (`⌘K`) | ✅ | basic | `:cmds` | – |
-| Native desktop (no Electron) | ✅ | Electron | terminal | browser |
+| Command palette (`⌘K`) | ✅ | navigation | `:cmds` | search only |
+| Native desktop (no Electron) | ✅ | Electron | terminal | Electron |
 | Self-hosted team server + OIDC SSO | ✅ Server | cloud / paid | – | ✅ |
 | Free · all features unlocked | ✅ beta | Personal · login | ✅ | ✅ |
 
-> **k9s gave us keyboard.** **Lens gave us scope.** We kept both, dropped the Electron overhead, and added the operations neither ships — plus a self-hosted **Server edition** the desktop tools don't have.
+<sub>Checked 31 August 2026 against Headlamp 0.45, Lens Desktop 2026.x and the current k9s documentation. Every column but ours is read off the vendor's own public documentation — if a cell is out of date or wrong, tell us and we will correct it.</sub>
+
+> **k9s gave us keyboard.** **Lens gave us scope.** We kept both, dropped the Electron overhead, and added the operations neither ships — plus a **Server edition** that serves the very same app to your team in the browser, behind your own OIDC.
 
 ## Editions
 
