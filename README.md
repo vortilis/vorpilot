@@ -119,6 +119,8 @@ Server deploys once into a single infrastructure cluster and talks to all the re
 
 Every feature unlocked — no account, no license key. `brew` and `winget` at public launch.
 
+> **Spain** — our site, downloads, updates and licence checks can be unreachable during football matches: collateral damage from court-ordered IP blocking that hits shared infrastructure, not something wrong with your connection. Retry after the match. An installed VorPilot keeps working through it: it tolerates a licence check that cannot reach us.
+
 ## FAQ
 
 <details>
