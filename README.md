@@ -29,7 +29,7 @@ Lives between `k9s` and Lens, doing the ops both punt to a shell alias.
 
 `k9s` gave us keyboard muscle memory. Lens gave us scope — multi-cluster, CRDs, the whole API. VorPilot keeps both and adds the operations they punt to a shell: pause a whole namespace, X-ray a workload's real dependency graph, deploy from a manifest catalog in one keystroke, browse a container's filesystem, drop a privileged debug pod onto a node.
 
-Native desktop — **no Electron, no browser tab**. macOS, Windows, and Linux. Every feature unlocked — no account, no license key.
+Native desktop — **no Electron, no browser tab**. macOS, Windows, and Linux.
 
 ## Highlights
 
@@ -118,7 +118,7 @@ Server deploys once into a single infrastructure cluster and talks to all the re
 
 **→ [vortilis.com/download](https://vortilis.com/download)** — macOS (Apple Silicon & Intel), Windows x64, Linux (x86_64 & ARM64).
 
-Every feature unlocked — no account, no license key. `brew` and `winget` at public launch.
+No account, no license key. `brew` and `winget` at public launch.
 
 > [!WARNING]
 > **Spain** — our site, downloads, updates and licence checks can be unreachable during football matches: collateral damage from court-ordered IP blocking that hits shared infrastructure, not something wrong with your connection. Retry after the match. An installed VorPilot keeps working through it: it tolerates a licence check that cannot reach us.
