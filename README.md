@@ -48,35 +48,51 @@ Native desktop — **no Electron, no browser tab**. macOS, Windows, and Linux.
 
 An instant X-ray of any workload — owners, Services, Ingress, config, storage, RBAC, and scaling, auto-laid-out and color-coded by health. And the whole namespace as one browsable inventory instead of clicking type by type.
 
-![Whole-namespace resource inventory — 62 resources across 21 kinds grouped into Workloads, Network, Config, Storage, Scaling, RBAC](assets/namespace-inventory.webp)
+<img src="assets/namespace-inventory.webp" width="880" alt="Whole-namespace resource inventory — 62 resources across 21 kinds grouped into Workloads, Network, Config, Storage, Scaling, RBAC" />
 
 ### Find exactly what you need
 
 Type-to-filter with AND / OR / NOT and per-column matches, stack real label and field selectors from any chip, and watch results narrow live. Promote any label to a sortable, persisted column. Pin the views you live in to numbered slots.
 
-![Filtering a Deployments table live with stacked label chips and the full action bar](assets/filtering.webp)
-
 ### Every action is a keystroke away
 
 A complete, discoverable hotkey system covers everything — command and filter modes, panels and dialogs, quick-access slots `1–9`, deploy macros, and context-aware actions per resource kind. Learn it once, then never reach for the mouse.
-
-![The keyboard shortcut map](assets/keyboard.webp)
 
 ### Pause a namespace, patch a workload — no YAML
 
 Pause an entire namespace and resume it precisely as it was — original replica counts, selectors, and HPAs restored from annotations. Edit env, image, and labels through focused dialogs that apply a minimal patch; secret values stay masked.
 
-![Suspending the shop-prod namespace — 5 deployments, 1 StatefulSet, 1 CronJob, 1 DaemonSet, 2 HPAs parked in one action](assets/suspend-resume.webp)
+<img src="assets/suspend-resume.webp" width="880" alt="Suspending the shop-prod namespace — 5 deployments, 1 StatefulSet, 1 CronJob, 1 DaemonSet, 2 HPAs parked in one action" />
 
 ### Debug deep, in seconds
 
 Drop a privileged toolbox onto any node with one keystroke — host filesystem at `/host`, kubectl / crictl / tcpdump / nsenter / strace already there. Browse a container's filesystem like Finder. Open a real terminal already pointed at the right cluster.
 
-![A privileged debug pod scheduled onto a specific node, with Files / Exec / Port-forward actions](assets/node-debug.webp)
+<details>
+<summary><b>More screenshots</b> — filtering, the keyboard map, node debugging, the file browser and the shell</summary>
+<br />
 
-![Container file browser — folders, sizes, Unix permissions, with upload / download / delete](assets/file-browser.webp)
+<p><b>Filtering a Deployments table live</b>, with stacked label chips and the full action bar.</p>
 
-![Integrated shell scoped to the selected cluster's context](assets/shell.webp)
+<p><img src="assets/filtering.webp" width="880" alt="Filtering a Deployments table live with stacked label chips and the full action bar" /></p>
+
+<p><b>The keyboard shortcut map</b>, reachable from anywhere with <code>F1</code>.</p>
+
+<p><img src="assets/keyboard.webp" width="880" alt="The keyboard shortcut map" /></p>
+
+<p><b>A privileged debug pod</b> scheduled onto a specific node, with Files / Exec / Port-forward actions.</p>
+
+<p><img src="assets/node-debug.webp" width="880" alt="A privileged debug pod scheduled onto a specific node, with Files / Exec / Port-forward actions" /></p>
+
+<p><b>The container file browser</b> — folders, sizes, Unix permissions, with upload / download / delete.</p>
+
+<p><img src="assets/file-browser.webp" width="880" alt="Container file browser — folders, sizes, Unix permissions, with upload / download / delete" /></p>
+
+<p><b>An integrated shell</b>, already scoped to the selected cluster's context.</p>
+
+<p><img src="assets/shell.webp" width="880" alt="Integrated shell scoped to the selected cluster's context" /></p>
+
+</details>
 
 ## VorPilot vs the shelf
 
