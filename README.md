@@ -62,7 +62,7 @@ A complete, discoverable hotkey system covers everything — command and filter 
 
 ![The keyboard shortcut map](assets/keyboard.webp)
 
-### Change anything without touching YAML
+### Pause a namespace, patch a workload — no YAML
 
 Pause an entire namespace and resume it precisely as it was — original replica counts, selectors, and HPAs restored from annotations. Edit env, image, and labels through focused dialogs that apply a minimal patch; secret values stay masked.
 
