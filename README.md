@@ -15,7 +15,7 @@ Lives between `k9s` and Lens, doing the ops both punt to a shell alias.
 &nbsp;![license](https://img.shields.io/badge/license-proprietary%20(EULA)-6e6b85)
 &nbsp;![beta](https://img.shields.io/badge/beta-every%20feature%20unlocked-4ade80)
 
-**[Download](#download)** · **[Features](#features)** · **[Compare](#vorpilot-vs-the-shelf)** · **[Editions](#editions)** · **[FAQ](#faq)** · **[vortilis.com](https://vortilis.com)**
+**[Download](#download)** · **[Features](#features)** · **[Compare](#alternatives-compared-vorpilot-vs-lens-k9s-and-headlamp)** · **[Editions](#editions)** · **[FAQ](#faq)** · **[vortilis.com](https://vortilis.com)**
 
 <br />
 
@@ -28,6 +28,8 @@ Lives between `k9s` and Lens, doing the ops both punt to a shell alias.
 ## Why VorPilot
 
 `k9s` gave us keyboard muscle memory. Lens gave us scope — multi-cluster, CRDs, the whole API. VorPilot keeps both and adds the operations they punt to a shell: pause a whole namespace, X-ray a workload's real dependency graph, deploy from a manifest catalog in one keystroke, browse a container's filesystem, drop a privileged debug pod onto a node.
+
+Looking for a **Lens alternative** without Electron or a mandatory login — or moving on from OpenLens? Want a **k9s alternative** with a real GUI? That gap is what VorPilot is built for.
 
 Native desktop — **no Electron, no browser tab**. macOS, Windows, and Linux.
 
@@ -94,9 +96,9 @@ Drop a privileged toolbox onto any node with one keystroke — host filesystem a
 
 </details>
 
-## VorPilot vs the shelf
+## Alternatives compared: VorPilot vs Lens, k9s and Headlamp
 
-An honest, feature-by-feature look at the tools we ourselves use. Full table on [vortilis.com/compare](https://vortilis.com/compare).
+An honest, feature-by-feature look at the Kubernetes desktop tools we ourselves use — for anyone weighing VorPilot as a Lens, k9s or Headlamp alternative. Full table on [vortilis.com/compare](https://vortilis.com/compare).
 
 | | **VorPilot** | Lens | k9s | Headlamp |
 |---|:---:|:---:|:---:|:---:|
@@ -140,6 +142,18 @@ No account, no license key. `brew` and `winget` at public launch.
 > **Spain** — our site, downloads, updates and licence checks can be unreachable during football matches: collateral damage from court-ordered IP blocking that hits shared infrastructure, not something wrong with your connection. Retry after the match. An installed VorPilot keeps working through it: it tolerates a licence check that cannot reach us.
 
 ## FAQ
+
+<details>
+<summary><b>Is VorPilot a Lens alternative?</b></summary>
+
+Yes. It covers the same ground — multi-cluster, multi-context, CRDs, exec / logs / port-forward — as a native app rather than Electron, and it is free during the beta with no login (Lens's free Personal tier requires one). It also ships what Lens doesn't: namespace suspend / resume, a container file browser, triggering a Job from a Job, a whole-namespace resource list and vim-style keyboard navigation. Where Lens still leads: metrics from metrics-server. Coming from Lens, OpenLens or Freelens, there is nothing to migrate — VorPilot reads your existing `kubeconfig`.
+</details>
+
+<details>
+<summary><b>Is there a k9s alternative with a GUI?</b></summary>
+
+That is VorPilot's starting point. It keeps the k9s muscle memory — `:pods`, `/filter`, keyboard for everything — and adds a UI for what a terminal can't show: a resource topology graph, the whole namespace on one pane, a container file browser, and a Server edition (coming Q4 2026) that serves the same app to your team behind OIDC. The trade-off: k9s is open source (Apache 2.0), VorPilot is not.
+</details>
 
 <details>
 <summary><b>Is it really free?</b></summary>
